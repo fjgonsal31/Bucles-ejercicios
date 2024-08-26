@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial: Bucles en JavaScript</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <h1>Tutorial: Bucles en JavaScript</h1>
 
-    <p>Los bucles son estructuras de control que permiten ejecutar un bloque de código repetidamente. En JavaScript, tenemos varios tipos de bucles, siendo los más comunes: for, while y do-while.</p>
+    <p>Los bucles son estructuras de control que permiten ejecutar un bloque de código repetidamente. En JavaScript,
+        tenemos varios tipos de bucles, siendo los más comunes: for, while y do-while.</p>
 
     <h2>1. Bucle for</h2>
     <p>El bucle <code>for</code> se utiliza cuando conocemos el número de iteraciones que queremos realizar.</p>
     <div class="example">
-        <pre><code>for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
-// Imprime: 0, 1, 2, 3, 4
-</code></pre>
+        <pre>
+            <code>
+            for (let i = 0; i < 5; i++) {
+                console.log(i);
+            }
+            // Imprime: 0, 1, 2, 3, 4
+        </code>
+    </pre>
     </div>
     <p>El bucle for consta de tres partes:</p>
     <ul>
@@ -28,39 +34,51 @@
     </ul>
 
     <h2>2. Bucle while</h2>
-    <p>El bucle <code>while</code> se utiliza cuando queremos que el código se repita mientras se cumpla una condición, sin saber necesariamente cuántas veces será.</p>
+    <p>El bucle <code>while</code> se utiliza cuando queremos que el código se repita mientras se cumpla una condición,
+        sin saber necesariamente cuántas veces será.</p>
     <div class="example">
-        <pre><code>let i = 0;
-while (i < 5) {
-    console.log(i);
-    i++;
-}
-// Imprime: 0, 1, 2, 3, 4
-</code></pre>
+        <pre>
+            <code>
+                let i = 0;
+                while (i < 5) {
+                    console.log(i);
+                    i++;
+                }
+                // Imprime: 0, 1, 2, 3, 4
+            </code>
+        </pre>
     </div>
-    <p>El bucle while evalúa la condición antes de cada iteración. Si la condición es falsa desde el principio, el código dentro del bucle no se ejecutará nunca.</p>
+    <p>El bucle while evalúa la condición antes de cada iteración. Si la condición es falsa desde el principio, el
+        código dentro del bucle no se ejecutará nunca.</p>
 
     <h2>3. Bucle do-while</h2>
-    <p>El bucle <code>do-while</code> es similar al while, pero garantiza que el código se ejecute al menos una vez, ya que la condición se evalúa al final de cada iteración.</p>
+    <p>El bucle <code>do-while</code> es similar al while, pero garantiza que el código se ejecute al menos una vez, ya
+        que la condición se evalúa al final de cada iteración.</p>
     <div class="example">
-        <pre><code>let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 5);
-// Imprime: 0, 1, 2, 3, 4
-</code></pre>
+        <pre>
+            <code>
+                let i = 0;
+                do {
+                    console.log(i);
+                    i++;
+                } while (i < 5);
+                // Imprime: 0, 1, 2, 3, 4
+            </code>
+        </pre>
     </div>
-    <p>Este bucle es útil cuando queremos que el código se ejecute al menos una vez, independientemente de la condición.</p>
+    <p>Este bucle es útil cuando queremos que el código se ejecute al menos una vez, independientemente de la condición.
+    </p>
 
     <h2>Comparación de los bucles</h2>
     <ul>
         <li><strong>for</strong>: Ideal cuando sabes cuántas veces quieres que se repita el bucle.</li>
-        <li><strong>while</strong>: Útil cuando no sabes cuántas iteraciones necesitarás, pero quieres continuar mientras se cumpla una condición.</li>
+        <li><strong>while</strong>: Útil cuando no sabes cuántas iteraciones necesitarás, pero quieres continuar
+            mientras se cumpla una condición.</li>
         <li><strong>do-while</strong>: Similar al while, pero garantiza al menos una ejecución del código.</li>
     </ul>
 
     <p>La elección del tipo de bucle dependerá de la situación específica y de lo que intentas lograr en tu código.</p>
-
+    <script src="js/01ejercicios.js"></script>
 </body>
+
 </html>
